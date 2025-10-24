@@ -59,7 +59,7 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         text = stringResource(id = R.string.nama),
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold,
-
+                        color = Color.White
 
                 }
         }
