@@ -60,8 +60,14 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color.White
-
+                    )
+                    Text(
+                        text = stringResource(id = R.string.alamat),
+                        fontSize = 18.sp,
+                        color = Color.LightGray
+                    )
                 }
+            }
         }
     }
 }
