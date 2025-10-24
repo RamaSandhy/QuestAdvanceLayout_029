@@ -1,3 +1,4 @@
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -44,7 +45,14 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 val gambar = painterResource(id = R.drawable.logoumy)
-
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(120.dp)
+                        .padding(5.dp)
+                )
             }
+        }
     }
 }
