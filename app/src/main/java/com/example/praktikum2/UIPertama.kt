@@ -57,9 +57,10 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 Column {
                     Text(
                         text = stringResource(id = R.string.nama),
+                        fontSize = 24.sp,
 
 
-        }
+                }
         }
     }
 }
