@@ -42,3 +42,16 @@ fun ProfileScreen( modifier: Modifier = Modifier,
             )
             .padding(horizontal = 20.dp)
     ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .fillMaxSize()
+                .statusBarsPadding()
+                .padding(top = 24.dp, bottom = 16.dp)
+        ) {
+            // Avatar
+            Avatar(
+                modifier = Modifier
+                    .size(96.dp)
+                    .shadow(16.dp, CircleShape, clip = true)
+            )
