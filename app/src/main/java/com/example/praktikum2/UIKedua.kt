@@ -96,3 +96,17 @@ fun ProfileScreen( modifier: Modifier = Modifier,
                 },
                 onClick = onPrivacy
             )
+            Spacer(Modifier.height(12.dp))
+            SettingCard(
+                title = "Riwayat Transaksi",
+                subtitle = null,
+                leading = {
+                    Icon(
+                        Icons.Filled.History,
+                        contentDescription = null,
+                        tint = Color(0xFF9BA8FF),
+                        modifier = Modifier.size(22.dp)
+                    )
+                },
+                onClick = onHistory
+            )
