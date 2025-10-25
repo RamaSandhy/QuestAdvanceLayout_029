@@ -64,8 +64,21 @@ fun ProfileScreen( modifier: Modifier = Modifier,
 
             // Nama, handle, tagline
             Text(
-                text = "Ryan Syaputra Maulana Arsad",
+                text = "Rama Sandhy Muhammad",
                 color = Color.White,
                 fontSize = 22.sp,
                 fontWeight = FontWeight.SemiBold
             )
+            Text(
+                text = "rshandy07@gmail.com",
+                color = Color(0xFFB8C0CC),
+                fontSize = 13.sp
+            )
+            Spacer(Modifier.height(8.dp))
+            Text(
+                text = "Saya Adalah App Developer",
+                color = Color(0xFFE4E7EC),
+                fontSize = 14.sp
+            )
+
+            Spacer(Modifier.height(24.dp))
