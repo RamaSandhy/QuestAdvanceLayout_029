@@ -140,3 +140,26 @@ private fun Avatar(modifier: Modifier = Modifier) {
         )
     }
 }
+@Composable
+private fun SocialRow() {
+    Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+        SocialDot("f", bg = Color(0xFF1877F2)) {}
+        SocialDot("G+", bg = Color(0xFFDB4437)) {}
+        SocialDot("t", bg = Color(0x03A9F4)) {}
+        SocialDot("in", bg = Color(0xFF0A66C2)) {}
+    }
+}
+
+@Composable
+private fun SocialDot(text: String, bg: Color, onClick: () -> Unit) {
+    Box(
+        modifier = Modifier
+            .size(36.dp)
+            .clip(CircleShape)
+            .background(bg.copy(alpha = 0.95f))
+            .clickable { onClick() },
+        contentAlignment = Alignment.Center
+    ) {
+        Text(text, color = Color.White, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+    }
+}
