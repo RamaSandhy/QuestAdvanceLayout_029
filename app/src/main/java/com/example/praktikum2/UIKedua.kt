@@ -163,3 +163,23 @@ private fun SocialDot(text: String, bg: Color, onClick: () -> Unit) {
         Text(text, color = Color.White, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
     }
 }
+@Composable
+private fun SettingCard(
+    title: String,
+    subtitle: String? = null,
+    leading: @Composable () -> Unit,
+    onClick: () -> Unit
+) {
+    val cardColor = Color(0x33FFFFFF)
+    val surface = Color(0x22FFFFFF)
+
+    Surface(
+        color = cardColor,
+        shape = RoundedCornerShape(16.dp),
+        tonalElevation = 0.dp,
+        shadowElevation = 0.dp,
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 64.dp)
+            .clickable { onClick() }
+    ) {
