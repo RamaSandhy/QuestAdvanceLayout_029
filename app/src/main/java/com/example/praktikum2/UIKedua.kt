@@ -183,3 +183,19 @@ private fun SettingCard(
             .heightIn(min = 64.dp)
             .clickable { onClick() }
     ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .background(surface)
+                .padding(horizontal = 16.dp, vertical = 12.dp)
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .background(Color(0x22FFFFFF)),
+                contentAlignment = Alignment.Center
+            ) { leading() }
+
+            Spacer(Modifier.width(12.dp))
+
