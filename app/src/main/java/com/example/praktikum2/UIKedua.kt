@@ -120,3 +120,23 @@ fun ProfileScreen( modifier: Modifier = Modifier,
         }
     }
 }
+@Composable
+private fun Avatar(modifier: Modifier = Modifier) {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 20.dp)
+    ){
+        Image(
+            painter = painterResource(id = R.drawable.rama),
+            contentDescription = "Foto Profil",
+            modifier = Modifier
+                .size(100.dp)
+                .clip(CircleShape)
+                .border(3.dp, Color.White, CircleShape),
+            contentScale = ContentScale.Crop,
+            alignment = Alignment.TopCenter
+        )
+    }
+}
