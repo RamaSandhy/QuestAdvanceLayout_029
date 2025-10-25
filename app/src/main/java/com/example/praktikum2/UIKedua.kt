@@ -82,3 +82,17 @@ fun ProfileScreen( modifier: Modifier = Modifier,
             )
 
             Spacer(Modifier.height(24.dp))
+
+            SettingCard(
+                title = "Privacy",
+                subtitle = null,
+                leading = {
+                    Icon(
+                        Icons.Filled.Security,
+                        contentDescription = null,
+                        tint = Color(0xFF7CD6F9),
+                        modifier = Modifier.size(22.dp)
+                    )
+                },
+                onClick = onPrivacy
+            )
