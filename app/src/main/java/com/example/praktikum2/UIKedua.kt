@@ -24,3 +24,21 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
+@Composable
+fun ProfileScreen( modifier: Modifier = Modifier,
+                   onPrivacy: () -> Unit = {},
+                   onHistory: () -> Unit = {},
+                   onSettings: () -> Unit = {}
+) {
+    val bgTop = Color(0xFF0E1116)
+    val bgBottom = Color(0xFF1A1F26)
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.verticalGradient(listOf(bgTop, bgBottom))
+            )
+            .padding(horizontal = 20.dp)
+    ) {
