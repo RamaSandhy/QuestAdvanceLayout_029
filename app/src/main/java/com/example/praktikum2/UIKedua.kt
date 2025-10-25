@@ -55,3 +55,17 @@ fun ProfileScreen( modifier: Modifier = Modifier,
                     .size(96.dp)
                     .shadow(16.dp, CircleShape, clip = true)
             )
+            Spacer(Modifier.height(12.dp))
+
+            // Row medsos (ikon bulat kecil)
+            SocialRow()
+
+            Spacer(Modifier.height(12.dp))
+
+            // Nama, handle, tagline
+            Text(
+                text = "Ryan Syaputra Maulana Arsad",
+                color = Color.White,
+                fontSize = 22.sp,
+                fontWeight = FontWeight.SemiBold
+            )
