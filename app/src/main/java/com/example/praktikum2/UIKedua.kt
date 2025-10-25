@@ -110,3 +110,13 @@ fun ProfileScreen( modifier: Modifier = Modifier,
                 },
                 onClick = onHistory
             )
+            Spacer(Modifier.weight(1f))
+
+            Text(
+                text = "© 2025 Rama Sandhy Muhammad",
+                color = Color(0xFF8C96A6),
+                fontSize = 12.sp
+            )
+        }
+    }
+}
